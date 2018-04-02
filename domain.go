@@ -3527,7 +3527,7 @@ func getDomainSchedulerParametersFieldInfo(params *DomainSchedulerParameters) ma
 		},
 		C.VIR_DOMAIN_SCHEDULER_GLOBAL_QUOTA: typedParamsFieldInfo{
 			set: &params.GlobalQuotaSet,
-			l:   &params.GlobalQuota,
+			ul:   &params.GlobalQuota,
 		},
 		C.VIR_DOMAIN_SCHEDULER_EMULATOR_PERIOD: typedParamsFieldInfo{
 			set: &params.EmulatorPeriodSet,
@@ -3535,7 +3535,7 @@ func getDomainSchedulerParametersFieldInfo(params *DomainSchedulerParameters) ma
 		},
 		C.VIR_DOMAIN_SCHEDULER_EMULATOR_QUOTA: typedParamsFieldInfo{
 			set: &params.EmulatorQuotaSet,
-			l:   &params.EmulatorQuota,
+			ul:   &params.EmulatorQuota,
 		},
 		C.VIR_DOMAIN_SCHEDULER_VCPU_PERIOD: typedParamsFieldInfo{
 			set: &params.VcpuPeriodSet,
@@ -3543,7 +3543,7 @@ func getDomainSchedulerParametersFieldInfo(params *DomainSchedulerParameters) ma
 		},
 		C.VIR_DOMAIN_SCHEDULER_VCPU_QUOTA: typedParamsFieldInfo{
 			set: &params.VcpuQuotaSet,
-			l:   &params.VcpuQuota,
+			ul:   &params.VcpuQuota,
 		},
 		C.VIR_DOMAIN_SCHEDULER_IOTHREAD_PERIOD: typedParamsFieldInfo{
 			set: &params.IothreadPeriodSet,
@@ -3551,7 +3551,7 @@ func getDomainSchedulerParametersFieldInfo(params *DomainSchedulerParameters) ma
 		},
 		C.VIR_DOMAIN_SCHEDULER_IOTHREAD_QUOTA: typedParamsFieldInfo{
 			set: &params.IothreadQuotaSet,
-			l:   &params.IothreadQuota,
+			ul:   &params.IothreadQuota,
 		},
 		C.VIR_DOMAIN_SCHEDULER_WEIGHT: typedParamsFieldInfo{
 			set: &params.WeightSet,
