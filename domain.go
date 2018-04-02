@@ -3490,7 +3490,7 @@ type DomainSchedulerParameters struct {
 	GlobalPeriodSet   bool
 	GlobalPeriod      uint64
 	GlobalQuotaSet    bool
-	GlobalQuota       int64
+	GlobalQuota       uint64
 	VcpuPeriodSet     bool
 	VcpuPeriod        uint64
 	VcpuQuotaSet      bool
@@ -3498,11 +3498,11 @@ type DomainSchedulerParameters struct {
 	EmulatorPeriodSet bool
 	EmulatorPeriod    uint64
 	EmulatorQuotaSet  bool
-	EmulatorQuota     int64
+	EmulatorQuota     uint64
 	IothreadPeriodSet bool
 	IothreadPeriod    uint64
 	IothreadQuotaSet  bool
-	IothreadQuota     int64
+	IothreadQuota     uint64
 	WeightSet         bool
 	Weight            uint
 	CapSet            bool
