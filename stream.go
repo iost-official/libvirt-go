@@ -85,6 +85,10 @@ func (v *Stream) Finish() error {
 	return nil
 }
 
+func (v *Stream) Close() error {
+ 	return v.Finish()
+ }
+
 // See also https://libvirt.org/html/libvirt-libvirt-stream.html#virStreamFree
 func (v *Stream) Free() error {
 	ret := C.virStreamFree(v.ptr)
