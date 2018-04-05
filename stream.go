@@ -179,6 +179,14 @@ func (v *Stream) SendHole(len int64, flags uint32) error {
 	return nil
 }
 
+func (v *Stream) Read(p []byte) (int, error) {
+ 	return v.Recv(p)
+}
+
+func (v *Stream) Write(p []byte) (int, error) {
+ 	return v.Send(p)
+}
+
 type StreamSinkFunc func(*Stream, []byte) (int, error)
 type StreamSinkHoleFunc func(*Stream, int64) error
 
